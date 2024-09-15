@@ -1,31 +1,31 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>TypeScript Compile Demo</title>
+  <title>TypeScript Compile</title>
   </head>
   
   <body>
       <h1>TypeScript Compile Demo</h1>
-      <p>This is a demo of <a href="https://github.com/niutech/typescript-compile">TypeScript Compile</a>. Have a look at the source code.</p>
-      <!-- Add your TypeScript code block using type="text/typescript" -->
       <script type="text/babel">
-          class Greeter {
-              greeting: string;
-              constructor (message: string) {
-                  this.greeting = message;
-              }
-              greet() {
-                  return "Hello, " + this.greeting;
+          class LeetcodeGetter {
+              // nickname: string;
+              cl: string = "123";
+              // constructor (nick: string) {
+              //     this.nickname = nick;
+              // }
+              getPlace() {
+                  return "parsing " + this.cl;
               }
           }
       </script>
       <!-- You can add multiple TypeScript blocks: -->
       <script type="text/babel">
-          var greeter = new Greeter('world');
+          var leetcodeGetter = new LeetcodeGetter();
+
           var button = document.createElement('button')
           button.innerHTML = "Say Hello"
           button.onclick = function() {
-                  alert(greeter.greet())
+                  alert(leetcodeGetter.getPlace())
           }
           document.body.appendChild(button)
       </script>
